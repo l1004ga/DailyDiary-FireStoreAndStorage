@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D77B61BA296F051B009112CF /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B61B9296F051B009112CF /* MyPageView.swift */; };
+		D7B56DEB296D3FD1007BF728 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7B56DEA296D3FD1007BF728 /* GoogleService-Info.plist */; };
+		D7B56DEE296D409F007BF728 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D7B56DED296D409F007BF728 /* FirebaseAuth */; };
+		D7B56DF0296D409F007BF728 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D7B56DEF296D409F007BF728 /* FirebaseFirestore */; };
+		D7B56DF2296D409F007BF728 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D7B56DF1296D409F007BF728 /* FirebaseFirestoreSwift */; };
+		D7B56DF4296D409F007BF728 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D7B56DF3296D409F007BF728 /* FirebaseStorage */; };
+		D7B56DF8296D7128007BF728 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B56DF7296D7128007BF728 /* MainView.swift */; };
+		D7B56DFA296D86AC007BF728 /* BioAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B56DF9296D86AC007BF728 /* BioAuthView.swift */; };
+		D7B56DFE296E3BA7007BF728 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B56DFD296E3BA7007BF728 /* HideKeyboardExtension.swift */; };
+		D7B56E04296E609D007BF728 /* 126670-star-rating-bad.json in Resources */ = {isa = PBXBuildFile; fileRef = D7B56DFF296E609D007BF728 /* 126670-star-rating-bad.json */; };
+		D7B56E05296E609D007BF728 /* 89033-star-in-hand-baby-astronaut.json in Resources */ = {isa = PBXBuildFile; fileRef = D7B56E00296E609D007BF728 /* 89033-star-in-hand-baby-astronaut.json */; };
+		D7B56E06296E609D007BF728 /* 126666-star-rating-okay.json in Resources */ = {isa = PBXBuildFile; fileRef = D7B56E01296E609D007BF728 /* 126666-star-rating-okay.json */; };
+		D7B56E07296E609D007BF728 /* 126667-star-rating-horrible.json in Resources */ = {isa = PBXBuildFile; fileRef = D7B56E02296E609D007BF728 /* 126667-star-rating-horrible.json */; };
+		D7B56E08296E609D007BF728 /* 126668-star-rating-awesome.json in Resources */ = {isa = PBXBuildFile; fileRef = D7B56E03296E609D007BF728 /* 126668-star-rating-awesome.json */; };
+		D7B56E0D296E6C5E007BF728 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B56E0C296E6C5E007BF728 /* DiaryView.swift */; };
+		D7B56E10296E6EE1007BF728 /* DiaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B56E0F296E6EE0007BF728 /* DiaryModels.swift */; };
+		D7B56E12296E775D007BF728 /* DiaryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B56E11296E775D007BF728 /* DiaryVM.swift */; };
+		D7B56E15296E90DA007BF728 /* DiaryAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B56E14296E90DA007BF728 /* DiaryAddView.swift */; };
+		D7B56E1A296EB6E5007BF728 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D7B56E19296EB6E5007BF728 /* SDWebImageSwiftUI */; };
+		D7DAD088296CECC100E7FA6D /* DailyDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAD087296CECC100E7FA6D /* DailyDiaryApp.swift */; };
+		D7DAD08A296CECC100E7FA6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAD089296CECC100E7FA6D /* ContentView.swift */; };
+		D7DAD08C296CECC300E7FA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DAD08B296CECC300E7FA6D /* Assets.xcassets */; };
+		D7DAD08F296CECC300E7FA6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DAD08E296CECC300E7FA6D /* Preview Assets.xcassets */; };
+		D7DAD096296CF3E900E7FA6D /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAD095296CF3E900E7FA6D /* SplashView.swift */; };
+		D7DAD09B296CF64000E7FA6D /* KyoboHandwriting2021sjy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D7DAD09A296CF63F00E7FA6D /* KyoboHandwriting2021sjy.otf */; };
+		D7DAD09E296CF7DB00E7FA6D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAD09D296CF7DB00E7FA6D /* LoginView.swift */; };
+		D7DAD0A1296D070600E7FA6D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D7DAD0A0296D070600E7FA6D /* Lottie */; };
+		D7DAD0A7296D09A300E7FA6D /* LottieAnima.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAD0A6296D09A300E7FA6D /* LottieAnima.swift */; };
+		D7DAD0A9296D1D3300E7FA6D /* 38319-shining-stars.json in Resources */ = {isa = PBXBuildFile; fileRef = D7DAD0A8296D1D3300E7FA6D /* 38319-shining-stars.json */; };
+		D7DAD0B0296D212900E7FA6D /* 126671-star-rating-good.json in Resources */ = {isa = PBXBuildFile; fileRef = D7DAD0AF296D212900E7FA6D /* 126671-star-rating-good.json */; };
+		D7DAD0B2296D245E00E7FA6D /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAD0B1296D245E00E7FA6D /* SignupView.swift */; };
+		D7DAD0B5296D2F3800E7FA6D /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAD0B4296D2F3800E7FA6D /* AuthVM.swift */; };
+		D7DAD0B9296D33EA00E7FA6D /* onelharu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7DAD0B8296D33EA00E7FA6D /* onelharu.mp3 */; };
+		D7DAD0BB296D371D00E7FA6D /* onelharu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D7DAD0BA296D371D00E7FA6D /* onelharu.m4a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D77B61B9296F051B009112CF /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		D7B56DEA296D3FD1007BF728 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D7B56DF7296D7128007BF728 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D7B56DF9296D86AC007BF728 /* BioAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthView.swift; sourceTree = "<group>"; };
+		D7B56DFD296E3BA7007BF728 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		D7B56DFF296E609D007BF728 /* 126670-star-rating-bad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "126670-star-rating-bad.json"; sourceTree = "<group>"; };
+		D7B56E00296E609D007BF728 /* 89033-star-in-hand-baby-astronaut.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "89033-star-in-hand-baby-astronaut.json"; sourceTree = "<group>"; };
+		D7B56E01296E609D007BF728 /* 126666-star-rating-okay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "126666-star-rating-okay.json"; sourceTree = "<group>"; };
+		D7B56E02296E609D007BF728 /* 126667-star-rating-horrible.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "126667-star-rating-horrible.json"; sourceTree = "<group>"; };
+		D7B56E03296E609D007BF728 /* 126668-star-rating-awesome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "126668-star-rating-awesome.json"; sourceTree = "<group>"; };
+		D7B56E0C296E6C5E007BF728 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		D7B56E0F296E6EE0007BF728 /* DiaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModels.swift; sourceTree = "<group>"; };
+		D7B56E11296E775D007BF728 /* DiaryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryVM.swift; sourceTree = "<group>"; };
+		D7B56E14296E90DA007BF728 /* DiaryAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAddView.swift; sourceTree = "<group>"; };
+		D7DAD084296CECC100E7FA6D /* DailyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DAD087296CECC100E7FA6D /* DailyDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDiaryApp.swift; sourceTree = "<group>"; };
+		D7DAD089296CECC100E7FA6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7DAD08B296CECC300E7FA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7DAD08E296CECC300E7FA6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7DAD095296CF3E900E7FA6D /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D7DAD09A296CF63F00E7FA6D /* KyoboHandwriting2021sjy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KyoboHandwriting2021sjy.otf; sourceTree = "<group>"; };
+		D7DAD09C296CF6DD00E7FA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D7DAD09D296CF7DB00E7FA6D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D7DAD0A6296D09A300E7FA6D /* LottieAnima.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnima.swift; sourceTree = "<group>"; };
+		D7DAD0A8296D1D3300E7FA6D /* 38319-shining-stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "38319-shining-stars.json"; sourceTree = "<group>"; };
+		D7DAD0AF296D212900E7FA6D /* 126671-star-rating-good.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "126671-star-rating-good.json"; sourceTree = "<group>"; };
+		D7DAD0B1296D245E00E7FA6D /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		D7DAD0B4296D2F3800E7FA6D /* AuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		D7DAD0B8296D33EA00E7FA6D /* onelharu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onelharu.mp3; sourceTree = "<group>"; };
+		D7DAD0BA296D371D00E7FA6D /* onelharu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = onelharu.m4a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7DAD081296CECC100E7FA6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B56E1A296EB6E5007BF728 /* SDWebImageSwiftUI in Frameworks */,
+				D7DAD0A1296D070600E7FA6D /* Lottie in Frameworks */,
+				D7B56DEE296D409F007BF728 /* FirebaseAuth in Frameworks */,
+				D7B56DF0296D409F007BF728 /* FirebaseFirestore in Frameworks */,
+				D7B56DF4296D409F007BF728 /* FirebaseStorage in Frameworks */,
+				D7B56DF2296D409F007BF728 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7B56DF5296D40D7007BF728 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAD095296CF3E900E7FA6D /* SplashView.swift */,
+				D7DAD09D296CF7DB00E7FA6D /* LoginView.swift */,
+				D7DAD0B1296D245E00E7FA6D /* SignupView.swift */,
+				D7B56DF9296D86AC007BF728 /* BioAuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D7B56DF6296D411D007BF728 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAD0BA296D371D00E7FA6D /* onelharu.m4a */,
+				D7DAD0B8296D33EA00E7FA6D /* onelharu.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D7B56E09296E6967007BF728 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D77B61B9296F051B009112CF /* MyPageView.swift */,
+				D7B56E13296E90B2007BF728 /* Diary */,
+				D7B56DF5296D40D7007BF728 /* Auth */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7B56E0E296E6EC9007BF728 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7B56E0F296E6EE0007BF728 /* DiaryModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7B56E13296E90B2007BF728 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				D7B56DF7296D7128007BF728 /* MainView.swift */,
+				D7B56E0C296E6C5E007BF728 /* DiaryView.swift */,
+				D7B56E14296E90DA007BF728 /* DiaryAddView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		D7DAD07B296CECC100E7FA6D = {
+			isa = PBXGroup;
+			children = (
+				D7DAD099296CF61500E7FA6D /* Fonts */,
+				D7DAD086296CECC100E7FA6D /* DailyDiary */,
+				D7DAD085296CECC100E7FA6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7DAD085296CECC100E7FA6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAD084296CECC100E7FA6D /* DailyDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7DAD086296CECC100E7FA6D /* DailyDiary */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAD087296CECC100E7FA6D /* DailyDiaryApp.swift */,
+				D7DAD089296CECC100E7FA6D /* ContentView.swift */,
+				D7B56DEA296D3FD1007BF728 /* GoogleService-Info.plist */,
+				D7DAD09C296CF6DD00E7FA6D /* Info.plist */,
+				D7DAD0AA296D1E7A00E7FA6D /* Lottie */,
+				D7B56E09296E6967007BF728 /* View */,
+				D7B56E0E296E6EC9007BF728 /* Models */,
+				D7DAD0B3296D2F0C00E7FA6D /* ViewModel */,
+				D7B56DF6296D411D007BF728 /* Sounds */,
+				D7DAD08B296CECC300E7FA6D /* Assets.xcassets */,
+				D7B56DFD296E3BA7007BF728 /* HideKeyboardExtension.swift */,
+				D7DAD08D296CECC300E7FA6D /* Preview Content */,
+			);
+			path = DailyDiary;
+			sourceTree = "<group>";
+		};
+		D7DAD08D296CECC300E7FA6D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAD08E296CECC300E7FA6D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7DAD099296CF61500E7FA6D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAD09A296CF63F00E7FA6D /* KyoboHandwriting2021sjy.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D7DAD0AA296D1E7A00E7FA6D /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAD0A6296D09A300E7FA6D /* LottieAnima.swift */,
+				D7B56E00296E609D007BF728 /* 89033-star-in-hand-baby-astronaut.json */,
+				D7B56E01296E609D007BF728 /* 126666-star-rating-okay.json */,
+				D7B56E02296E609D007BF728 /* 126667-star-rating-horrible.json */,
+				D7B56E03296E609D007BF728 /* 126668-star-rating-awesome.json */,
+				D7B56DFF296E609D007BF728 /* 126670-star-rating-bad.json */,
+				D7DAD0AF296D212900E7FA6D /* 126671-star-rating-good.json */,
+				D7DAD0A8296D1D3300E7FA6D /* 38319-shining-stars.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		D7DAD0B3296D2F0C00E7FA6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7DAD0B4296D2F3800E7FA6D /* AuthVM.swift */,
+				D7B56E11296E775D007BF728 /* DiaryVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7DAD083296CECC100E7FA6D /* DailyDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DAD092296CECC300E7FA6D /* Build configuration list for PBXNativeTarget "DailyDiary" */;
+			buildPhases = (
+				D7DAD080296CECC100E7FA6D /* Sources */,
+				D7DAD081296CECC100E7FA6D /* Frameworks */,
+				D7DAD082296CECC100E7FA6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyDiary;
+			packageProductDependencies = (
+				D7DAD0A0296D070600E7FA6D /* Lottie */,
+				D7B56DED296D409F007BF728 /* FirebaseAuth */,
+				D7B56DEF296D409F007BF728 /* FirebaseFirestore */,
+				D7B56DF1296D409F007BF728 /* FirebaseFirestoreSwift */,
+				D7B56DF3296D409F007BF728 /* FirebaseStorage */,
+				D7B56E19296EB6E5007BF728 /* SDWebImageSwiftUI */,
+			);
+			productName = DailyDiary;
+			productReference = D7DAD084296CECC100E7FA6D /* DailyDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7DAD07C296CECC100E7FA6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					D7DAD083296CECC100E7FA6D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = D7DAD07F296CECC100E7FA6D /* Build configuration list for PBXProject "DailyDiary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7DAD07B296CECC100E7FA6D;
+			packageReferences = (
+				D7DAD09F296D070600E7FA6D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				D7B56DEC296D409F007BF728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D7B56E18296EB6E5007BF728 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = D7DAD085296CECC100E7FA6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7DAD083296CECC100E7FA6D /* DailyDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7DAD082296CECC100E7FA6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DAD08F296CECC300E7FA6D /* Preview Assets.xcassets in Resources */,
+				D7B56DEB296D3FD1007BF728 /* GoogleService-Info.plist in Resources */,
+				D7B56E07296E609D007BF728 /* 126667-star-rating-horrible.json in Resources */,
+				D7DAD09B296CF64000E7FA6D /* KyoboHandwriting2021sjy.otf in Resources */,
+				D7B56E08296E609D007BF728 /* 126668-star-rating-awesome.json in Resources */,
+				D7B56E05296E609D007BF728 /* 89033-star-in-hand-baby-astronaut.json in Resources */,
+				D7DAD08C296CECC300E7FA6D /* Assets.xcassets in Resources */,
+				D7B56E04296E609D007BF728 /* 126670-star-rating-bad.json in Resources */,
+				D7DAD0BB296D371D00E7FA6D /* onelharu.m4a in Resources */,
+				D7DAD0B0296D212900E7FA6D /* 126671-star-rating-good.json in Resources */,
+				D7DAD0B9296D33EA00E7FA6D /* onelharu.mp3 in Resources */,
+				D7B56E06296E609D007BF728 /* 126666-star-rating-okay.json in Resources */,
+				D7DAD0A9296D1D3300E7FA6D /* 38319-shining-stars.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7DAD080296CECC100E7FA6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DAD0B2296D245E00E7FA6D /* SignupView.swift in Sources */,
+				D7B56DF8296D7128007BF728 /* MainView.swift in Sources */,
+				D77B61BA296F051B009112CF /* MyPageView.swift in Sources */,
+				D7DAD08A296CECC100E7FA6D /* ContentView.swift in Sources */,
+				D7DAD088296CECC100E7FA6D /* DailyDiaryApp.swift in Sources */,
+				D7DAD09E296CF7DB00E7FA6D /* LoginView.swift in Sources */,
+				D7B56E0D296E6C5E007BF728 /* DiaryView.swift in Sources */,
+				D7B56E12296E775D007BF728 /* DiaryVM.swift in Sources */,
+				D7B56DFA296D86AC007BF728 /* BioAuthView.swift in Sources */,
+				D7DAD0A7296D09A300E7FA6D /* LottieAnima.swift in Sources */,
+				D7B56DFE296E3BA7007BF728 /* HideKeyboardExtension.swift in Sources */,
+				D7B56E15296E90DA007BF728 /* DiaryAddView.swift in Sources */,
+				D7B56E10296E6EE1007BF728 /* DiaryModels.swift in Sources */,
+				D7DAD0B5296D2F3800E7FA6D /* AuthVM.swift in Sources */,
+				D7DAD096296CF3E900E7FA6D /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7DAD090296CECC300E7FA6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7DAD091296CECC300E7FA6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7DAD093296CECC300E7FA6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyDiary/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RG9LBF3XF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyDiary/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID instead of a password to access your account.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jina.DailyDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7DAD094296CECC300E7FA6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyDiary/Preview Content\"";
+				DEVELOPMENT_TEAM = 4RG9LBF3XF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyDiary/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID instead of a password to access your account.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jina.DailyDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7DAD07F296CECC100E7FA6D /* Build configuration list for PBXProject "DailyDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DAD090296CECC300E7FA6D /* Debug */,
+				D7DAD091296CECC300E7FA6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DAD092296CECC300E7FA6D /* Build configuration list for PBXNativeTarget "DailyDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DAD093296CECC300E7FA6D /* Debug */,
+				D7DAD094296CECC300E7FA6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7B56DEC296D409F007BF728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		D7B56E18296EB6E5007BF728 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D7DAD09F296D070600E7FA6D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7B56DED296D409F007BF728 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7B56DEC296D409F007BF728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D7B56DEF296D409F007BF728 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7B56DEC296D409F007BF728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D7B56DF1296D409F007BF728 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7B56DEC296D409F007BF728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		D7B56DF3296D409F007BF728 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7B56DEC296D409F007BF728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		D7B56E19296EB6E5007BF728 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7B56E18296EB6E5007BF728 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		D7DAD0A0296D070600E7FA6D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7DAD09F296D070600E7FA6D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D7DAD07C296CECC100E7FA6D /* Project object */;
+}
