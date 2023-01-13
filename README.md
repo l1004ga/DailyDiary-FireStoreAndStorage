@@ -3,7 +3,7 @@
 
 # 사용된 기술
 1. Firebase(Firebase Authentication, Storage, Store)
-    (참고자료) https://firebase.google.com/docs
+    - (참고자료) https://firebase.google.com/docs
     
 2. Lottie Animation
     - 위쪽 자료를 메인으로 참고, 업데이트 버전에 없는 메서드가 있어서 해당 메서드만 아래 자료 참고로 수정함
@@ -73,6 +73,6 @@
     - 마이페이지(로그인방식 토글, 로그아웃 등) 구현
     - 일기내용 세부보기 구현
     - 로그인 시 세션 유지방식 고려(키체인!!!!)
-    - 이메일 및 이름 입력 시 알맞는 키보드 세팅
+    - 이메일 및 이름 입력 시 알맞는 키보드 세팅(완료)
     - 일기 작성 시 시간 데이터포맷 맞춰주기(완료)
     - Google Info-Plist 삭제
