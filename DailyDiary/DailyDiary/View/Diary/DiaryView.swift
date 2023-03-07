@@ -35,7 +35,9 @@ struct DiaryView: View {
                     
                     
                     List(diaryVM.diarys.filter{ $0.category == category }) { diary in
-                        NavigationLink(value: diary) {
+                        NavigationLink(destination: {
+                            DairyDetailView(diary: diary)
+                        }) {
                             
                             VStack(alignment: .leading) {
                                 Text(diary.createdDate)

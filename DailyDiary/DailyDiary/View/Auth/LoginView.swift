@@ -103,6 +103,7 @@ struct LoginView: View {
                                 switch codeValue {
                                 case 200:
                                     authVM.page = "Page2"
+                                    authVM.fetchUser(email: email)
                                 case 17008:
                                     alertMessage = "이메일 형식이 아닙니다."
                                     creatAlert = true

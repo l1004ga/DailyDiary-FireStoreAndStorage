@@ -87,14 +87,20 @@ class AuthVM : ObservableObject {
                     for document in snapshot.documents {
                         
                         let docData = document.data()
-                        let username: String = docData["username"] as? String ?? ""
+                        let username: String = docData["name"] as? String ?? ""
                         
                         self.storeEmail = email
                         self.storeName = username
+                        print(self.storeName)
                         
                     }
                 }
             }
+    }
+    
+    func logout() {
+        self.currentUser = nil
+        try? Auth.auth().signOut()
     }
     
     

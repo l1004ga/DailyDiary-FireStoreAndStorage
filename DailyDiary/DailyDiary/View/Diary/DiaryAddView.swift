@@ -108,7 +108,7 @@ struct DiaryAddView: View {
                         }
                     }
                     dismiss()
-
+                    
                 } label: {
                     Text("일기 저장하기")
                         .padding()
@@ -157,3 +157,4 @@ struct DiaryAddView_Previews: PreviewProvider {
             .environmentObject(DiaryVM())
     }
 }
+

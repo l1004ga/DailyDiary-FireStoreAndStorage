@@ -18,7 +18,7 @@ extension UIApplication {
         window.addGestureRecognizer(tapRecognizer)
     }
  }
- 
+
 extension UIApplication: UIGestureRecognizerDelegate {
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return false

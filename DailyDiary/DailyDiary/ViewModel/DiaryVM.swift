@@ -52,14 +52,13 @@ class DiaryVM: ObservableObject {
                         let memo: String = docData["memo"] as? String ?? ""
                         let images: [String] = docData["images"] as? [String] ?? []
                         //파이어베이스에 Timestamp 형식으로 저장된 데이터를 받아옴
-                        let createdAtTimeStamp: Timestamp = docData["CreatedAt"] as? Timestamp ?? Timestamp()
+                        let createdAtTimeStamp: Timestamp = docData["createdAt"] as? Timestamp ?? Timestamp()
                         //Timestamp로 받아온 데이터를 Date 형식으로 반환
                         let createdAt: Date = createdAtTimeStamp.dateValue()
                     
                         let category: String = docData["category"] as? String ?? ""
                         
                         let diary : Diary = Diary(id: id, username: username, memo: memo, createdAt: createdAt, images: images, category: category)
-                        
                         self.diarys.append(diary)
                     }
                 }

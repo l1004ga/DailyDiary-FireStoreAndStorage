@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 
 struct Diary: Codable, Identifiable, Hashable {
-    var id: String
-    var username: String
-    var memo: String
+    let id: String
+    let username: String
+    let memo: String
     //날짜 생성
-    var createdAt: Date
+    let createdAt: Date
     //날짜 포맷 후 뷰에 사용될 데이터 형식
     var createdDate: String {
         let dateFormatter = DateFormatter()
@@ -25,7 +25,7 @@ struct Diary: Codable, Identifiable, Hashable {
         
         return dateFormatter.string(from: dateCreatedAt)
     }
-    var images: [String]
-    var category : String
+    let images: [String]
+    let category : String
 }
 

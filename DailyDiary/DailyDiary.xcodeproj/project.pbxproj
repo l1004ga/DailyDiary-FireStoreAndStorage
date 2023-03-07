@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D728272E29B71A2E00AE1060 /* SafariWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D728272D29B71A2E00AE1060 /* SafariWebView.swift */; };
 		D77B61BA296F051B009112CF /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77B61B9296F051B009112CF /* MyPageView.swift */; };
+		D782281B29B7304A00195813 /* DairyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782281A29B7304A00195813 /* DairyDetailView.swift */; };
 		D7B56DEB296D3FD1007BF728 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7B56DEA296D3FD1007BF728 /* GoogleService-Info.plist */; };
 		D7B56DEE296D409F007BF728 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D7B56DED296D409F007BF728 /* FirebaseAuth */; };
 		D7B56DF0296D409F007BF728 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D7B56DEF296D409F007BF728 /* FirebaseFirestore */; };
@@ -44,7 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D728272D29B71A2E00AE1060 /* SafariWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebView.swift; sourceTree = "<group>"; };
 		D77B61B9296F051B009112CF /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		D782281A29B7304A00195813 /* DairyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyDetailView.swift; sourceTree = "<group>"; };
 		D7B56DEA296D3FD1007BF728 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7B56DF7296D7128007BF728 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D7B56DF9296D86AC007BF728 /* BioAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthView.swift; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D728272C29B7081D00AE1060 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				D77B61B9296F051B009112CF /* MyPageView.swift */,
+				D728272D29B71A2E00AE1060 /* SafariWebView.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
 		D7B56DF5296D40D7007BF728 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +129,7 @@
 		D7B56E09296E6967007BF728 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D77B61B9296F051B009112CF /* MyPageView.swift */,
+				D728272C29B7081D00AE1060 /* Mypage */,
 				D7B56E13296E90B2007BF728 /* Diary */,
 				D7B56DF5296D40D7007BF728 /* Auth */,
 			);
@@ -137,6 +150,7 @@
 				D7B56DF7296D7128007BF728 /* MainView.swift */,
 				D7B56E0C296E6C5E007BF728 /* DiaryView.swift */,
 				D7B56E14296E90DA007BF728 /* DiaryAddView.swift */,
+				D782281A29B7304A00195813 /* DairyDetailView.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -324,6 +338,8 @@
 				D7B56DFE296E3BA7007BF728 /* HideKeyboardExtension.swift in Sources */,
 				D7B56E15296E90DA007BF728 /* DiaryAddView.swift in Sources */,
 				D7B56E10296E6EE1007BF728 /* DiaryModels.swift in Sources */,
+				D782281B29B7304A00195813 /* DairyDetailView.swift in Sources */,
+				D728272E29B71A2E00AE1060 /* SafariWebView.swift in Sources */,
 				D7DAD0B5296D2F3800E7FA6D /* AuthVM.swift in Sources */,
 				D7DAD096296CF3E900E7FA6D /* SplashView.swift in Sources */,
 			);
