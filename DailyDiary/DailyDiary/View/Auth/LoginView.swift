@@ -11,8 +11,8 @@ import LocalAuthentication
 
 struct LoginView: View {
     @State private var isUnlocked : Bool = false
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @State private var email: String = "l1004ga@gmail.com"
+    @State private var password: String = "3041307g"
     
     @EnvironmentObject var authVM : AuthVM
     
@@ -130,6 +130,7 @@ struct LoginView: View {
                     
                     Button {
                         authVM.page = "Page3"
+                        print("변경됨")
                     } label: {
                         Text("회원가입")
                             .foregroundColor(.white)

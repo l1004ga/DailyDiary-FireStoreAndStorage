@@ -21,21 +21,32 @@ struct BioAuthView: View {
     //현재 인스턴스를 해제하기 위해 사용
     @Environment(\.dismiss) private var dismiss
     
+    //UserDefaults 기본값으로 false가 할당됨
+    @State private var bioAuth = UserDefaults.standard.bool(forKey: "bioAuthOnOff")
+    
     //생체인식 실행 함수
     func authenticate() {
         let context = LAContext()
         var error: NSError?
         
         // check whether biometric authentication is possible
+        //deviceOwnerAuthenticationWithBiometrics
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             // it's possible, so go ahead and use it
             let reason = "We need to unlock your data."
             
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { success, authenticationError in
                 // authentication has now completed
                 if success {
+                    
+                    // 바이오 로그인 가능한 상태로 변환
+                    self.bioAuth = true
+                    UserDefaults.standard.set(self.bioAuth, forKey: "bioAuthOnOff")
+                    
+                    //인증 버튼 비활성화
                     isUnlocked = true
                     upPassword = true
+                    
                     
                     //firebase 바이오 로그인 체크
                     

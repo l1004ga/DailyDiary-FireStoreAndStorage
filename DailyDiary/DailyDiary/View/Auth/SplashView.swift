@@ -40,6 +40,7 @@ class SoundSetting: ObservableObject {
 
 struct SplashView: View {
     @State private var isActive = false
+    @EnvironmentObject var authVM : AuthVM
     
     //효과음 넣기
     var soundSetting = SoundSetting()

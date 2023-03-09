@@ -15,6 +15,11 @@ class AuthVM : ObservableObject {
     // 로그인 상태 확인
     @Published var currentUser: Firebase.User?
     
+    // MARK: 초기화로 firebase 로그인 상태 유지를 위한 값 할당
+    init() {
+        currentUser = Auth.auth().currentUser
+    }
+    
     //앱 로그인에 따른 page 변경
     @Published var page = "Page1"
     
@@ -82,20 +87,20 @@ class AuthVM : ObservableObject {
     
     func fetchUser(email :String) {
         Firestore.firestore().collection("users").whereField("email", isEqualTo: email).getDocuments() { (snapshot, error) in
-                
-                if let snapshot {
-                    for document in snapshot.documents {
-                        
-                        let docData = document.data()
-                        let username: String = docData["name"] as? String ?? ""
-                        
-                        self.storeEmail = email
-                        self.storeName = username
-                        print(self.storeName)
-                        
-                    }
+            
+            if let snapshot {
+                for document in snapshot.documents {
+                    
+                    let docData = document.data()
+                    let username: String = docData["name"] as? String ?? ""
+                    
+                    self.storeEmail = email
+                    self.storeName = username
+                    print(self.storeName)
+                    
                 }
             }
+        }
     }
     
     func logout() {
